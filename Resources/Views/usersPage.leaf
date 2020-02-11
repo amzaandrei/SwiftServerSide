@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=1">
+    </head>
+    <body>
+        #embed("navbar")
+        <div class="userClass">
+            #for(user in userViewList.users){
+            <div class="card bg-light text-dark">
+                <a href="/user/#(user.id)"><div class="card-body">#(index + 1). #(user.username)</div></a>
+            </div>
+            }
+        </div>
+    </body>
+</html>
+

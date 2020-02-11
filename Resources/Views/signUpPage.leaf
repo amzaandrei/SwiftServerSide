@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=1">
+    </head>
+    <body>
+        </br>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Register</h3>
+                        <form method="post" action="/signUP">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control" id="email" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">First name</label>
+                                <input type="text" name="firstName" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Last name</label>
+                                <input type="text" name="lastName" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" class="form-control" id="password"  required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Username</label>
+                                <input type="text" name="username" class="form-control" required/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Age</label>
+                                <input type="text" name="age" class="form-control" required/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">State</label>
+                                <input type="text" name="state" class="form-control" required/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-block btn-primary" value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

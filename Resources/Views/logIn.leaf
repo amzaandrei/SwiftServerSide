@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <title>Web Auth</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=1">
+    </head>
+    <body class="container">
+        <br />
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+    <div class="card">
+        <div class="card-body">
+            <h3 class="panel-title">Login</h3>
+
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-block btn-success" value="Login" />
+                </div>
+            </form>
+            <form action="/signup" method="get">
+                <div class="form-group">
+                <input type="submit" class="btn btn-block btn-success" value="Sign up" />
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>

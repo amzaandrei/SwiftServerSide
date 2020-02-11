@@ -1,0 +1,20 @@
+.allContent{
+    padding: 0px 10% 0px 10%;
+}
+.userClass{
+    position: relative;
+    padding: 5% 10% 0px 10%;
+}
+.myCard{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.cardContent {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+}

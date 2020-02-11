@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+    <body>
+        #embed("navbar")
+    </br>
+        <div class="allContent">
+            <form method="post" action="/sendMessage">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Write here what's on your mind!</label>
+                    <input type="text" class="form-control" name="messageText" id="messageText" placeholder="Example input">
+                        <input type="submit" class="btn btn-block btn-success" value="Add" />
+                        </div>
+            </form>
+            #for(message in userViewList.messages){
+            <div class="card bg-light text-dark">
+                <div class="card-body">#(message.messageText)</div>
+            </div>
+            }
+        </div>
+    </body>
+</html>

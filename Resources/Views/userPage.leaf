@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=1">
+    </head>
+    <body>
+        #embed("navbar")
+        <div class="userClass">
+            #for(message in userViewList.messages){
+            <div class="card bg-light text-dark">
+                <div class="card-body">#(index + 1). #(message.messageText)</div>
+            </div>
+            }
+        </div>
+    </body>
+</html>
+
+
